@@ -33,6 +33,16 @@ public class PagerAdaptornew extends FragmentPagerAdapter {
         return 3;
     }
 
+    @Override
+    public CharSequence getPageTitle(int position) {
+        switch(position){
+            case 0: return "blank";
 
+            case 1: return " s";
 
+            case 2: return "fourth";
+                    
+            default:return null;
+        }
+    }
 }
